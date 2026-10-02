@@ -19,10 +19,7 @@
 
     <Button
         android:id="@+id/btnContinuar"
-        style="Boton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        style="@style/BotonTarea"
         android:text="@string/btn_continuar"
         app:backgroundTint="@color/verde_continuar"
         app:layout_constraintEnd_toStartOf="@id/btnCancelar"
@@ -31,10 +28,7 @@
 
     <Button
         android:id="@+id/btnCancelar"
-        style="Boton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        style="@style/BotonTarea"
         android:text="@string/btn_cancelar"
         app:backgroundTint="@color/rojo_cancelar"
         app:layout_constraintEnd_toEndOf="parent"
