@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:text="@string/btn_continuar"
+        app:backgroundTint="@color/verde_continuar"
         app:layout_constraintEnd_toStartOf="@id/btnCancelar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvNombre" />
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:text="@string/btn_cancelar"
+        app:backgroundTint="@color/rojo_cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnContinuar"
         app:layout_constraintTop_toBottomOf="@id/tvNombre" />
