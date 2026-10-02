@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RecursosHugo</string>
+    <string name="nombre_completo" translatable="false">Hugo Cervilla Fernandez</string>
+    <string name="continuar">Continuar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="hugo_cervilla_fernandez">hugo_cervilla_fernandez</string>
+    <string name="btn_continuar">btn_continuar</string>
+    <string name="btn_cancelar">btn_cancelar</string>
 </resources>
