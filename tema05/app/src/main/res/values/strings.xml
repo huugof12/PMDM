@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoginHugo</string>
+    <string name="tv_correo">Correo electrónico</string>
+    <string name="tv_clave">Contraseña</string>
+    <string name="hint_correo">correo@correo.com</string>
+    <string name="hint_clave">••••</string>
+    <string name="switch_recordar">Recordar contraseña</string>
+    <string name="btn_continuar">Continuar</string>
+
+    <string name="acceso_correcto">Usuario y contraseña correctos</string>
+    <string name="acceso_correcto_recordar">Usuario y contraseña correctos. Almacenados para siguientes accesos</string>
+    <string name="acceso_incorrecto">Usuario y/o contraseña incorrectos</string>
+    <string name="error_vacio_correo">Escribe tu correo</string>
+    <string name="error_vacio_clave">Escribe la contraseña</string>
+    <string name="demasiados_intentos">Demasiados intentos</string>
+</resources>
