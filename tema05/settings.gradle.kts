@@ -25,3 +25,4 @@ dependencyResolutionManagement {
 rootProject.name = "LoginHugo"
 include(":app")
 include(":app")
+include(":app")
