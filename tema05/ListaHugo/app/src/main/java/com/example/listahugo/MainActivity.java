@@ -3,7 +3,9 @@ package com.example.listahugo;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
-
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.DividerItemDecoration;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         videojuegos.add(new Videojuego("Hollow Knight", "Multiplataforma", R.drawable.ic_game_8));
 
 
+        RecyclerView rvLista = findViewById(R.id.rvLista);
+        rvLista.setLayoutManager(new LinearLayoutManager(this));
+
+        rvLista.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+
+
+        rvLista.setAdapter(new AdaptadorVideojuegos(videojuegos));
 
     }
 }
