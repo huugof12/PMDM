@@ -1,5 +1,6 @@
 package com.example.loginhugo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             String correo = cajaTextoCorreo.getText().toString().trim();
             String clave = cajaTextoPass.getText().toString();
 
-
             if (correo.isEmpty()) {
                 cajaTextoCorreo.setError(getString(R.string.error_vacio_correo));
                 return;
@@ -41,15 +41,12 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-
             if (correo.equals(CORREO_VALIDO) && clave.equals(CLAVE_VALIDA)) {
                 intentos = 0;
-                tvMensaje.setTextColor(ContextCompat.getColor(this, R.color.colorCorrecto));
-                if (swRecordar.isChecked()) {
-                    tvMensaje.setText(R.string.acceso_correcto_recordar);
-                } else {
-                    tvMensaje.setText(R.string.acceso_correcto);
-                }
+                Intent intent = new Intent(this, MenuActivity.class);
+                intent.putExtra(MenuActivity.EXTRA_CORREO, correo);
+                startActivity(intent);
+                finish();
             } else {
                 intentos++;
                 if (intentos >= 3) {
