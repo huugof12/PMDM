@@ -4,7 +4,7 @@
     <string name="tv_clave">Contraseña</string>
     <string name="hint_correo">correo@correo.com</string>
     <string name="hint_clave">••••</string>
-    <string name="switch_recordar">Recordar contraseña</string>
+    <string name="switch_recordar">Recordar correo</string>
     <string name="btn_continuar">Continuar</string>
 
     <string name="acceso_correcto">Usuario y contraseña correctos</string>
