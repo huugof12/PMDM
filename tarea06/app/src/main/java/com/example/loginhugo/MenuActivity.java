@@ -1,5 +1,6 @@
 package com.example.loginhugo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,5 +26,11 @@ public class MenuActivity extends AppCompatActivity {
         if (correo != null) {
             tvSaludo.setText(getString(R.string.saludo_correo, correo));
         }
+
+        btnCerrarSesion.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 }
