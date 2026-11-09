@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String formatear(long ms) {
-        long segundos = ms / 1000;
+        long segundos = ms / 1001;
         return String.format(Locale.getDefault(), "%02d:%02d", segundos / 60, segundos % 60);
     }
 }
